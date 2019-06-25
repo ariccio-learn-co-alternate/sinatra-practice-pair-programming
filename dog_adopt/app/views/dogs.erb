@@ -1,0 +1,21 @@
+<div class="container">
+  <header>Dog adoption app</header>
+  <div class="col-md-8 col-md-offset-2">
+    <h3>Doggies!</h2>
+
+    <div class="content">
+    <%Dog.all.each do |dog|%>
+    <li>Doggy name: <%=dog.name%>, Age: <%=dog.age%>, Breed: <%=dog.breed%></li>
+    <%end%>
+    </div>
+
+    <div class="sidebar">
+      <h3>Doggy stats</h3>
+      <ul>
+        <li><b>Doggies:</b> <%= Dog.count %></li>
+      </ul>
+
+    </div>
+
+  </div>
+</div>
